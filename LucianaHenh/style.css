@@ -1,5 +1,5 @@
-/* Aplica Montserrat a todo el cuerpo de texto */
-body {
+ /* Aplica Montserrat a todo el cuerpo de texto */
+ body {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -8,14 +8,43 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif;
 }
 
-.hidden-menu {
-    display: none;
+/* Estilos para el efecto hover de los botones de navegación */
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+  
 }
 
-.open-menu {
-    display: block;
+/* Estilos para los iconos de redes sociales */
+.social-icon:hover {
+    color: #ffbb00; /* Cambia a un color deseado */
+    transform: scale(1.1);
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
+/* Estilos para los botones */
+.button:hover {
+    background-color: #ffbb00; /* Cambia a un color deseado */
+    color: #000;
+    transform: scale(1.05);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Estilos para el efecto de transición en imágenes del slider */
+.gallery-slider img {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.gallery-slider img.fade {
+    opacity: 0;
+}
+
+.gallery-slider img.active {
+    opacity: 1;
+}
+
+/* Estilos para el contenedor de la galería */
 .gallery-slider {
     position: relative;
     overflow: hidden;
@@ -30,7 +59,6 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: auto;
     display: none; /* Oculta las imágenes por defecto */
-    transition: opacity 0.5s ease-in-out; /* Transición suave de opacidad */
 }
 
 .gallery-slider img.active {
@@ -58,6 +86,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 10px;
     cursor: pointer;
 }
+
 .social-icons {
     display: flex;
     gap: 30px; /* Espacio entre iconos */
@@ -71,4 +100,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .social-icon i:hover {
     color: #000000; /* Color del icono al pasar el ratón */
+}
+
+.hidden-menu {
+    display: none;
+}
+
+.open-menu {
+    display: block;
 }
