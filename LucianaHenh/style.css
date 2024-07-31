@@ -58,3 +58,17 @@ h1, h2, h3, h4, h5, h6 {
     padding: 10px;
     cursor: pointer;
 }
+.social-icons {
+    display: flex;
+    gap: 30px; /* Espacio entre iconos */
+}
+
+.social-icon i {
+    font-size: 40px; /* Tamaño del icono */
+    color: white; /* Color del icono */
+    transition: color 0.3s ease;
+}
+
+.social-icon i:hover {
+    color: #000000; /* Color del icono al pasar el ratón */
+}
