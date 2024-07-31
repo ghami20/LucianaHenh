@@ -1,0 +1,60 @@
+/* Aplica Montserrat a todo el cuerpo de texto */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Aplica Playfair Display a los encabezados */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+.hidden-menu {
+    display: none;
+}
+
+.open-menu {
+    display: block;
+}
+
+.gallery-slider {
+    position: relative;
+    overflow: hidden;
+    max-width: 80%; /* Ajusta según lo necesario */
+    max-height: 600px; /* Ajusta según lo necesario */
+    margin: auto;
+    border-radius: 10px; /* Bordes redondeados opcionales */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+}
+
+.gallery-slider img {
+    width: 100%;
+    height: auto;
+    display: none; /* Oculta las imágenes por defecto */
+    transition: opacity 0.5s ease-in-out; /* Transición suave de opacidad */
+}
+
+.gallery-slider img.active {
+    display: block; /* Muestra la imagen activa */
+    opacity: 1; /* Opacidad total para la imagen activa */
+}
+
+.gallery-slider img.fade {
+    opacity: 0; /* Hace que las imágenes inactivas se desvanezcan */
+}
+
+.gallery-slider .slider-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.gallery-slider .slider-controls button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
